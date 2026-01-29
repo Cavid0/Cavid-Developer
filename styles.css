@@ -33,7 +33,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -142,7 +141,6 @@ body {
     display: none;
 }
 
-/* Hero Section */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -502,7 +500,6 @@ body {
     width: 96px;
 }
 
-/* Tech Stack Section */
 .tech-stack-section {
     width: 100%;
     padding: 2.5rem 0;
@@ -629,7 +626,6 @@ body {
     color: #cbd5e1;
 }
 
-/* About Section */
 .about-section {
     width: 100%;
     padding: 6rem 0;
@@ -761,7 +757,6 @@ body {
     color: var(--muted-foreground);
 }
 
-/* Projects Section */
 .projects-section {
     width: 100%;
     padding: 6rem 0;
@@ -981,7 +976,6 @@ body {
     color: var(--muted-foreground);
 }
 
-/* Blog Section */
 .blog-section {
     width: 100%;
     padding: 6rem 0;
@@ -1167,7 +1161,6 @@ body {
     transform: translateX(4px);
 }
 
-/* Contact Section */
 .contact-section {
     width: 100%;
     padding: 6rem 0;
@@ -1298,7 +1291,6 @@ body {
     font-weight: 500;
 }
 
-/* Footer */
 .footer {
     background: var(--background);
     border-top: 1px solid var(--border);
@@ -1329,7 +1321,6 @@ body {
     font-size: 0.875rem;
 }
 
-/* Blog Post Page */
 .blog-post-main {
     display: flex;
     min-height: 100vh;

@@ -1,8 +1,6 @@
-// Theme toggle functionality
 const themeToggle = document.getElementById('theme-toggle');
 const htmlElement = document.documentElement;
 
-// Default dark mode - users can switch to light if they want
 const currentTheme = localStorage.getItem('theme') || 'dark';
 if (currentTheme === 'dark') {
     htmlElement.classList.add('dark');
@@ -14,7 +12,6 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
-// Blog posts data
 const posts = [
     {
         id: "1",
@@ -36,7 +33,6 @@ const posts = [
     }
 ];
 
-// Fetch GitHub repositories
 async function fetchGitHubRepos() {
     const reposContainer = document.getElementById('github-repos');
     
@@ -91,12 +87,10 @@ async function fetchGitHubRepos() {
     }
 }
 
-// Load GitHub repos when page loads
 if (document.getElementById('github-repos')) {
     fetchGitHubRepos();
 }
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
