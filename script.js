@@ -12,27 +12,6 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
-const posts = [
-    {
-        id: "1",
-        title: "Mənim İlk Blog Postum",
-        content: "Bu, Next.js ilə yaradılmış ilk blog postumdur. Çox sürətlidir!",
-        date: "2024-05-20"
-    },
-    {
-        id: "2",
-        title: "React və Next.js Öyrənirəm",
-        content: "React komponentləri və Next.js routing sistemi ilə işləmək çox maraqlıdır.",
-        date: "2024-05-21"
-    },
-    {
-        id: "3",
-        title: "Texnologiya Dünyası",
-        content: "Proqramlaşdırma dünyasında yeniliklər bitmir.",
-        date: "2024-05-22"
-    }
-];
-
 async function fetchGitHubRepos() {
     const reposContainer = document.getElementById('github-repos');
     
