@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavid | Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-box">C</span>
+                    Cavid | Developer
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link">Ana Səhifə</a>
+                <a href="#about" class="nav-link">Haqqımda</a>
+                <a href="#contact" class="nav-link">Əlaqə</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Open for opportunities
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Creative <br>
+                        <span class="gradient-text">Developer</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Salam, mən <strong>Cavid</strong>. Müasir veb texnologiyaları ilə vizual olaraq cəlbedici və funksional rəqəmsal həllər yaradıram. Next.js, React və arxa fon sistemləri üzrə ixtisaslaşmışam.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Mənimlə İşlə
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">Haqqımda Daha Çox</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Cavid0" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cavid-shukurov-2129152b2/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:cavidwukurov917@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-noise"></div>
+                        <div class="visual-gradient"></div>
+                        <div class="visual-content">
+                            <svg class="code-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <div class="placeholder-lines">
+                                <div class="placeholder-line"></div>
+                                <div class="placeholder-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack-section">
+            <div class="tech-container">
+                <div class="skill-badge skill-javascript">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-badge skill-typescript">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-badge skill-react">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <span>React</span>
+                </div>
+                <div class="skill-badge skill-nextjs">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-badge skill-tailwind">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="skill-badge skill-ruby">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 17 10 11 4 5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                    <span>Ruby</span>
+                </div>
+                <div class="skill-badge skill-sql">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    </svg>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-badge skill-c">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                    </svg>
+                    <span>C</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="section-header">
+                    <h2 class="section-title">Haqqımda</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Mən proqramlaşdırma dünyasına böyük marağı olan bir gəncəm. Kod yazmaq mənim üçün sadəcə iş deyil, kompleks problemləri həll etmək sənətidir.
+                        </p>
+                        <p>
+                            Hər yeni layihədə özümü inkişaf etdirməyə çalışıram. Frontend dizayndan tutmuş Backend arxitekturaya qədər hər detala diqqət yetirirəm.
+                        </p>
+                        <ul class="about-list">
+                            <li>
+                                <span class="list-dot"></span>
+                                Full Stack Development
+                            </li>
+                            <li>
+                                <span class="list-dot"></span>
+                                UI/UX Design Principles
+                            </li>
+                            <li>
+                                <span class="list-dot"></span>
+                                Database Optimization
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="feature-card">
+                            <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            </svg>
+                            <h3 class="feature-title">Yaradıcı Yanaşma</h3>
+                            <p class="feature-description">Standart qəliblərdən kənara çıxaraq, hər layihəyə unikal vizual üslub və funksionallıq qatıram.</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg class="feature-icon feature-icon-pink" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                            <h3 class="feature-title">Təmiz Kod</h3>
+                            <p class="feature-description">Oxunaqlı, saxlanıla bilən və optimal performanslı kod yazmaq mənim əsas prinsiplərimdəndir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Projects Section -->
+        <section class="projects-section">
+            <div class="projects-container">
+                <div class="projects-header">
+                    <div>
+                        <h2 class="section-title">GitHub Repozitoriyaları</h2>
+                        <p class="section-subtitle">Son zamanlarda üzərində işlədiyim açıq qaynaqlı layihələr.</p>
+                    </div>
+                    <a href="https://github.com/Cavid0" target="_blank" class="view-all-link">
+                        Hamısına bax
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="github-repos" class="repos-grid">
+                    <div class="loading-message">GitHub repozitoriyaları yüklənir...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="blog-container">
+                <div class="blog-header">
+                    <span class="blog-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 11a9 9 0 0 1 9 9"></path>
+                            <path d="M4 4a16 16 0 0 1 16 16"></path>
+                            <circle cx="5" cy="19" r="1"></circle>
+                        </svg>
+                    </span>
+                    <h2 class="section-title">Blog Yazıları</h2>
+                </div>
+            
+                <div class="blog-grid">
+                    <a href="blog.html?id=1" class="blog-card">
+                        <div class="blog-thumbnail">
+                            <div class="blog-category">Article</div>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">2024-05-20</time>
+                            <h3 class="blog-title">Mənim İlk Blog Postum</h3>
+                            <p class="blog-excerpt">Bu, Next.js ilə yaradılmış ilk blog postumdur. Çox sürətlidir!</p>
+                            <div class="blog-read-more">
+                                Oxumağa davam et
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog.html?id=2" class="blog-card">
+                        <div class="blog-thumbnail">
+                            <div class="blog-category">Article</div>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">2024-05-21</time>
+                            <h3 class="blog-title">React və Next.js Öyrənirəm</h3>
+                            <p class="blog-excerpt">React komponentləri və Next.js routing sistemi ilə işləmək çox maraqlıdır.</p>
+                            <div class="blog-read-more">
+                                Oxumağa davam et
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="blog.html?id=3" class="blog-card">
+                        <div class="blog-thumbnail">
+                            <div class="blog-category">Article</div>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">2024-05-22</time>
+                            <h3 class="blog-title">Texnologiya Dünyası</h3>
+                            <p class="blog-excerpt">Proqramlaşdırma dünyasında yeniliklər bitmir.</p>
+                            <div class="blog-read-more">
+                                Oxumağa davam et
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">Birgə nəsə yaradaq?</h2>
+                <p class="contact-description">
+                    Layihələriniz və ya əməkdaşlıq təklifləriniz üçün hər zaman açığım.
+                </p>
+                
+                <div class="contact-cards">
+                    <a href="mailto:cavidwukurov917@gmail.com" class="contact-card">
+                        <div class="contact-icon contact-icon-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-label">Email</p>
+                            <p class="contact-value">cavidwukurov917@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Cavid0" target="_blank" class="contact-card">
+                        <div class="contact-icon contact-icon-gray">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-label">GitHub</p>
+                            <p class="contact-value">@Cavid0</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/cavid-shukurov-2129152b2/" target="_blank" class="contact-card">
+                        <div class="contact-icon contact-icon-blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-label">LinkedIn</p>
+                            <p class="contact-value">Cavid Shukurov</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Cavid. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
