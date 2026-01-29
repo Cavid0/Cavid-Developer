@@ -2,8 +2,8 @@
 const themeToggle = document.getElementById('theme-toggle');
 const htmlElement = document.documentElement;
 
-// Check for saved theme preference or default to 'light' mode
-const currentTheme = localStorage.getItem('theme') || 'light';
+// Default dark mode - users can switch to light if they want
+const currentTheme = localStorage.getItem('theme') || 'dark';
 if (currentTheme === 'dark') {
     htmlElement.classList.add('dark');
 }
